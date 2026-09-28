@@ -28,5 +28,4 @@ ENV HOSTNAME="0.0.0.0"
 ENV PORT=3000
 
 # Команда запуска
-CMD ["npm", "run", "start"]
-CMD ["npm", "run", "start"]
+CMD ["sh", "-c", "HOSTNAME=0.0.0.0 PORT=3000 npm run start"]

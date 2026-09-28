@@ -23,4 +23,10 @@ COPY --from=builder /app ./
 EXPOSE 3000
 
 # Команда запуска
+# Привязка к внешнему интерфейсу
+ENV HOSTNAME="0.0.0.0"
+ENV PORT=3000
+
+# Команда запуска
+CMD ["npm", "run", "start"]
 CMD ["npm", "run", "start"]
